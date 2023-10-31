@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3815A6632C03952F70B751CF /* Pods_yiwen_note.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB509413FA61D9D5FCF4498 /* Pods_yiwen_note.framework */; };
-		396BE5E02AEAA69800F79A10 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396BE5DF2AEAA69800F79A10 /* Tip.swift */; };
+		396BE5E02AEAA69800F79A10 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396BE5DF2AEAA69800F79A10 /* Event.swift */; };
+		3980B9652AF1414C00A33519 /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3980B9642AF1414C00A33519 /* EventData.swift */; };
 		3990231B2AEA2AEE00F29E8D /* yiwen_noteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3990231A2AEA2AEE00F29E8D /* yiwen_noteApp.swift */; };
-		3990231D2AEA2AEE00F29E8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3990231C2AEA2AEE00F29E8D /* ContentView.swift */; };
+		3990231D2AEA2AEE00F29E8D /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3990231C2AEA2AEE00F29E8D /* EventList.swift */; };
 		3990231F2AEA2AEF00F29E8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3990231E2AEA2AEF00F29E8D /* Assets.xcassets */; };
 		399023222AEA2AEF00F29E8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 399023212AEA2AEF00F29E8D /* Preview Assets.xcassets */; };
 		3990232A2AEA332A00F29E8D /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399023292AEA332A00F29E8D /* ItemView.swift */; };
@@ -18,10 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		396BE5DF2AEAA69800F79A10 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
+		396BE5DF2AEAA69800F79A10 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		3980B9642AF1414C00A33519 /* EventData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
 		399023172AEA2AEE00F29E8D /* yiwen_note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yiwen_note.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3990231A2AEA2AEE00F29E8D /* yiwen_noteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yiwen_noteApp.swift; sourceTree = "<group>"; };
-		3990231C2AEA2AEE00F29E8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3990231C2AEA2AEE00F29E8D /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
 		3990231E2AEA2AEF00F29E8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		399023212AEA2AEF00F29E8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		399023292AEA332A00F29E8D /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
@@ -64,7 +66,8 @@
 		396BE5DE2AEA9E4100F79A10 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				396BE5DF2AEAA69800F79A10 /* Tip.swift */,
+				396BE5DF2AEAA69800F79A10 /* Event.swift */,
+				3980B9642AF1414C00A33519 /* EventData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,7 +114,7 @@
 		399023282AEA330900F29E8D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3990231C2AEA2AEE00F29E8D /* ContentView.swift */,
+				3990231C2AEA2AEE00F29E8D /* EventList.swift */,
 				399023292AEA332A00F29E8D /* ItemView.swift */,
 			);
 			path = View;
@@ -218,8 +221,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				396BE5E02AEAA69800F79A10 /* Tip.swift in Sources */,
-				3990231D2AEA2AEE00F29E8D /* ContentView.swift in Sources */,
+				396BE5E02AEAA69800F79A10 /* Event.swift in Sources */,
+				3990231D2AEA2AEE00F29E8D /* EventList.swift in Sources */,
+				3980B9652AF1414C00A33519 /* EventData.swift in Sources */,
 				3990232A2AEA332A00F29E8D /* ItemView.swift in Sources */,
 				3990231B2AEA2AEE00F29E8D /* yiwen_noteApp.swift in Sources */,
 			);
@@ -379,7 +383,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -411,7 +415,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

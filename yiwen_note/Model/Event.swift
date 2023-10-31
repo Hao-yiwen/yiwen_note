@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Tip: Identifiable {
+struct Event: Identifiable {
     var id = UUID()
     var content:String
     var remark: String
-    var isReminderOn: Bool
+    var isComplete = false
 }

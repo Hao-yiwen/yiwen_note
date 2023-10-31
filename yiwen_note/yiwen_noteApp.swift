@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct yiwen_noteApp: App {
+    @StateObject private var evenData = EventData()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                EventList()
+                Text("Select an Event")
+                    .foregroundStyle(.secondary)
+            }
+            .environmentObject(evenData)
         }
     }
 }
