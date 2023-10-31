@@ -14,13 +14,6 @@ struct ItemView: View {
     @Binding var remark: String
     
     @State private var isRemarkVisible: Bool = false
-    
-    init(isReminderOn: Binding<Bool>, content: Binding<String>, remark: Binding<String>) {
-        self._isReminderOn = isReminderOn
-        self._content = content
-        self._remark = remark
-        self._isRemarkVisible = State(initialValue: !remark.wrappedValue.isEmpty)
-    }
 
     var body: some View {
         VStack {
@@ -31,7 +24,7 @@ struct ItemView: View {
                 VStack {
                     TextField("添加", text: $content)
                         .font(.title3)
-                        .padding([.top, .bottom, .trailing])
+                        .padding([.top, .trailing])
                     
                     if isRemarkVisible || !remark.isEmpty {
                         TextField("备注", text: $remark)
@@ -40,9 +33,7 @@ struct ItemView: View {
                     }
                 }
             }
-            Divider()
         }
-        .padding()
     }
 }
 
